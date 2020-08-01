@@ -1,23 +1,24 @@
 # A ros node for JY901 publishing imu msg
-The package is written in python. It published **imu** msgs information to **/imu_raw** by packing the acceleatation, angular velocity and angle data.
+The package is written in python. It published **imu** msgs information to **/imu_raw** revealing the acceleatation, angular velocity and angle info.
 I'm using JY901 model from Wit sensor developer (http://www.wit-motion.com/index.php?m=goods&a=details&content_id=43) 
 and not sure if this can also be used for other companies.  
 <img src="https://github.com/maggielovedd/jy901-imu-ros/blob/master/demo_photo/JY901_wit_sensor.png" width="300" alt="">  
 
 Most part of the code is provided by Wit for obtaining raw data and I simply packed the info them in imu msgs.
-I hope this can help people to visualiza and use the imu of JY901 directly.
-I also add some possible errors during execution, pls check troubleshooting below.
-
-## Note
-In order to achieve the visualization, I used ros imu-tool (http://wiki.ros.org/imu_tools). Please install it if you haven't, just type:   
-```sudo apt-get install ros-<distro>-imu-tools```
+A world frame (position, quaternion) = (000,0001) will be published when running the launch file so that you can test JY901 directly and independtly.
+I hope this can help people to visualiza and use the imu of JY901 directly in ROS.
+I also add some possible errors during execution, pls check troubleshooting.
 
 ## Command
-To run this:  
+In order to achieve the visualization, I used ros imu-tool (http://wiki.ros.org/imu_tools). Please install it if you haven't:  
+
+```sudo apt-get install ros-<distro>-imu-tools```
+
+To run this package:  
 
 ```roslaunch jy901_python_imu jy901_imu.launch```
 
-The final result looks like this (arrow for acceleration):  
+The final result looks like this (yellow arrow for acceleration):  
 
 <img src="https://github.com/maggielovedd/jy901-imu-ros/blob/master/demo_photo/jy901_imu.png" alt="">
 
@@ -28,6 +29,7 @@ rosrun jy901_python_imu jy901_imu.py
 ```
 
 It will print the measurements in terminal:  
+
 <img src="https://github.com/maggielovedd/jy901-imu-ros/blob/master/demo_photo/terminal_output.png" alt="">
 
 ## Troubleshooting
