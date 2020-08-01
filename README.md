@@ -27,7 +27,8 @@ roscore
 rosrun jy901_python_imu jy901_imu.py
 ```
 
-It will print the measurements in terminal:
+It will print the measurements in terminal:  
+<img src="https://github.com/maggielovedd/jy901-imu-ros/blob/master/demo_photo/terminal_output.png" alt="">
 
 ## Troubleshooting
 Error | Solution
@@ -36,5 +37,5 @@ env: python\r: No such file or directory | https://stackoverflow.com/questions/1
 could not open port /dev/ttyUSB0 | https://blog.yelvlab.cn/archives/285/umn
 
 ## Remards
-The visualization part can be used, but the axis orientation may be incorrect. I will debug it later.
-My JY901 took the common param (e.g. 10 Hz) in the code, so you may need to adjust these your to own if the setting/product is different.
+- The visualization part can be used, but the axis orientation may be incorrect. I will debug it later.
+- My JY901 took the common param (e.g. 10 Hz) in the code, so you may need to adjust these your to own if the setting/product is different.
