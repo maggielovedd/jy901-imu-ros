@@ -1,7 +1,7 @@
 # A ros node for JY901 publishing imu msg
 The package is written in python. It published **imu** msgs information to **/imu_raw** revealing the acceleatation, angular velocity and angle info.
 I'm using JY901 model from Wit sensor developer (http://www.wit-motion.com/index.php?m=goods&a=details&content_id=43) 
-and not sure if this can also be used for other companies.  
+and not sure if this can also be used for others.  
 <img src="https://github.com/maggielovedd/jy901-imu-ros/blob/master/demo_photo/JY901_wit_sensor.png" width="300" alt="">  
 
 Most part of the code is provided by Wit for obtaining raw data and I simply packed the info them in imu msgs.
@@ -38,6 +38,6 @@ Error | Solution
 env: python\r: No such file or directory | https://stackoverflow.com/questions/19425857/env-python-r-no-such-file-or-directory
 could not open port /dev/ttyUSB0 | https://blog.yelvlab.cn/archives/285/umn
 
-## Remards
+## Remarks
 - The visualization part can be used, but the axis orientation may be incorrect. I will debug it later.
 - My JY901 took the common param (e.g. 10 Hz) in the code, so you may need to adjust these your to own if the setting/product is different.
