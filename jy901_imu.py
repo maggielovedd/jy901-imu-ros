@@ -5,6 +5,7 @@ import rospy
 import serial
 from serial import Serial
 import numpy as np
+from numpy import pi
 from sensor_msgs.msg import Imu
 
 ACCData=[0.0]*8
@@ -204,6 +205,11 @@ def get_angle(datahex):
 
 
 def euler_to_quaternion(yaw, pitch, roll):
+    
+    # change to radius
+    yaw = yaw*pi/180
+    pitch = pitch*pi/180
+    roll = roll*pi/180
 
     qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
     qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
