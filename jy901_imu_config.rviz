@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /Imu1
         - /Imu1/Box properties1
-        - /Imu1/Acceleration properties1
       Splitter Ratio: 0.5
     Tree Height: 445
   - Class: rviz/Selection
@@ -67,12 +66,12 @@ Visualization Manager:
         Axes scale: 1
         Enable axes: true
       Box properties:
-        Box alpha: 0.300000012
+        Box alpha: 0.5
         Box color: 165; 244; 121
         Enable box: true
-        x_scale: 0.100000001
+        x_scale: 0.200000003
         y_scale: 0.200000003
-        z_scale: 0.200000003
+        z_scale: 0.0500000007
       Class: rviz_imu_plugin/Imu
       Enabled: true
       Name: Imu
@@ -109,25 +108,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.28786278
+      Distance: 1.32378519
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0409024209
-        Y: 0.0145631349
-        Z: -0.261850119
+        X: -0.128097907
+        Y: -0.0772366151
+        Z: -0.146820843
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 1.34479654
+      Pitch: 0.439796865
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.65541792
+      Yaw: 5.62541533
     Saved:
       - Class: rviz/Orbit
         Distance: 0.234795079

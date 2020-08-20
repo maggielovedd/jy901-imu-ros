@@ -204,7 +204,7 @@ def get_angle(datahex):
     return angle_x,angle_y,angle_z
 
 
-def euler_to_quaternion(yaw, pitch, roll):
+def euler_to_quaternion(roll, pitch, yaw):
     
     # change to radius
     yaw = yaw*pi/180
