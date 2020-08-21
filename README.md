@@ -36,7 +36,7 @@ It will print the measurements in terminal:
 Error | Solution
 ------------ | -------------
 env: python\r: No such file or directory | https://stackoverflow.com/questions/19425857/env-python-r-no-such-file-or-directory
-could not open port /dev/ttyUSB0 | https://blog.yelvlab.cn/archives/285/umn
+could not open port /dev/ttyUSB0 | 1.setup a file /etc/udev/rules.d/70-ttyusb.rules  2.add this KERNEL=="ttyUSB[0-9]*", MODE="0666"  3.unplug and plug usb   https://blog.yelvlab.cn/archives/285/
 
 ## Remarks
 - The visualization part can be used, but the axis orientation may be incorrect. I will debug it later.
