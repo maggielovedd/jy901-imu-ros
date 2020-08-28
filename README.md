@@ -39,5 +39,4 @@ env: python\r: No such file or directory | https://stackoverflow.com/questions/1
 could not open port /dev/ttyUSB0 | 1.setup a file /etc/udev/rules.d/70-ttyusb.rules  2.add this KERNEL=="ttyUSB[0-9]*", MODE="0666"  3.unplug and plug usb   https://blog.yelvlab.cn/archives/285/
 
 ## Remarks
-- The visualization part can be used, but the axis orientation may be incorrect. I will debug it later.
 - My JY901 took the common param (e.g. 10 Hz) in the code, so you may need to adjust these your to own if the setting/product is different.
